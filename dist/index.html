@@ -1,55 +1,117 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Tennis Pro</title>
     <link rel="stylesheet" type="text/css" href="main.min.css">
 </head>
 <body>
     <div class="wrapper">
+        <div class="popup">
+
+            <div class="popup-background"></div>
+            <div class="popup-content">
+                <div class="popup-content-background">
+                    <div class="popup-content-background-yellow">
+                        <img src="img/mask.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="popup-close">
+                    <svg><use xlink:href="img/sprite.svg#popup-close"></use></svg>
+                </a>
+                <div class="popup-human">
+                    <img src="img/about-human-2.png" alt="">
+                </div>
+                <div class="form-wrapper">
+                    <div class="form-title">ЗАПИСАТЬСЯ НА <span>ПРОБНОЕ ЗАНЯТИЕ</span></div>
+                    <div class="form-subtitle">Оставьте свои данные и мы вам перезвоним, чтобы согласовать удобное для вас время тренировки</div>
+                    <form action="" class="form">
+                        <label for="" class="form-block">
+                            <div class="error"></div>
+                            <input type="text" class="form-input" placeholder="Имя Фамилия*" required>
+                        </label>
+                        <label for="" class="form-block">
+                            <div class="error"></div>
+                            <input type="text" class="form-input" placeholder="Номер телефона*" required>
+                        </label>
+                        <div class="__select" data-state="">
+                            <div class="__select__title" data-default="Option 0">Выберите ваш уровень игры:</div>
+                            <div class="__select__content">
+                                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"/>
+                                <label for="singleSelect0" class="__select__label">Option 0</label>
+                                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect1" class="__select__label">Новичок</label>
+                                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect2" class="__select__label">Любитель</label>
+                                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect"/>
+                                <label for="singleSelect3" class="__select__label">Профи</label>
+                            </div>
+                        </div>
+                        <label for="" class="form-block">
+                            <div class="error"></div>
+                            <input type="text" class="form-input" placeholder="Комментарий или вопрос">
+                        </label>
+                        <div class="form-description">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных.</div>
+                        <div class="form-submit">
+                            <button class="submit" id="send">Отправить</button>
+                            <div class="modal" id="modal">
+                                <div class="modalText" id="modalText">
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="first">
+            <div class="first-background-human">
+                <img src="img/first.png" alt="">
+                <div class="ball-container">
+                    <svg class="ball-text"><use xlink:href="img/sprite.svg#ball-text"></use></svg>
+                    <img class="ball-img" src="img/ball.png" alt="">
+                </div>
+            </div>
             <div class="first-backgrounds">
                 <div class="first-rectangles">
                     <div class="first-background-yellow">
-                        <img src="img/first-mask-1.png" alt="">
+                        <img src="img/mask.png" alt="">
                     </div>
                     <div class="first-background-grey">
-                        <img src="img/first-mask-2.png" alt="">
+                        <img src="img/mask.png" alt="">
                     </div>
                 </div>
-                <div class="first-background-human">
-                    <img src="img/first.png" alt="">
-                </div>
+
             </div>
 
-        <div class="header">
+        <header>
             <a href="index.html" class="logo-wrapper">
                 <svg class="logo"><use xlink:href="img/sprite.svg#logo"></use></svg>
             </a>
-            <div class="nav">
+            <nav class="nav-header">
                 <a href="about.html" class="nav-item">О нас</a>
-                <a href="" class="nav-item">Программы</a>
-                <a href="" class="nav-item">Тренеры</a>
-                <a href="" class="nav-item">Контакты</a>
-            </div>
-            <div class="burger">
+                <a href="programs.html" class="nav-item">Программы</a>
+                <a href="coaches.html" class="nav-item">Тренеры</a>
+                <a href="contacts.html" class="nav-item">Контакты</a>
+            </nav>
+            <a class="burger">
                 <div class="burger-line-1"></div>
                 <div class="burger-line-2"></div>
-            </div>
-        </div>
+            </a>
+        </header>
             <div class="first-content">
-        <div class="first-title">
-            Стань профессионалом <p>большого тенниса</p>
-        </div>
+        <h1 class="first-title">
+            Стань профессионалом <span>большого тенниса</span>
+        </h1>
         <div class="first-subtitle">
             Запишитесь на первое бесплатное занятие с персональным тренером, <p> вы определите свой уровень игры и получите рекомендации по тренировкам</p>
         </div>
             </div>
         </div>
     </div>
-
+    <script src="script.min.js"></script>
 </body>
 </html>

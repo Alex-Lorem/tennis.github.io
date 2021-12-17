@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="main.min.css">
+  <title>Программы • Tennis Pro</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="popup">
+
+      <div class="popup-background"></div>
+      <div class="popup-content">
+        <div class="popup-content-background">
+          <div class="popup-content-background-yellow">
+            <img src="img/mask.png" alt="">
+          </div>
+        </div>
+        <a href="#" class="popup-close">
+          <svg><use xlink:href="img/sprite.svg#popup-close"></use></svg>
+        </a>
+        <div class="popup-human">
+          <img src="img/about-human-2.png" alt="">
+        </div>
+        <div class="form-wrapper">
+          <div class="form-title">ЗАПИСАТЬСЯ НА <span>ПРОБНОЕ ЗАНЯТИЕ</span></div>
+          <div class="form-subtitle">Оставьте свои данные и мы вам перезвоним, чтобы согласовать удобное для вас время тренировки</div>
+          <form action="" class="form">
+            <label for="" class="form-block">
+              <div class="error"></div>
+              <input type="text" class="form-input" placeholder="Имя Фамилия*" required>
+            </label>
+            <label for="" class="form-block">
+              <div class="error"></div>
+              <input type="text" class="form-input" placeholder="Номер телефона*" required>
+            </label>
+            <div class="__select" data-state="">
+              <div class="__select__title" data-default="Option 0">Выберите ваш уровень игры:</div>
+              <div class="__select__content">
+                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"/>
+                <label for="singleSelect0" class="__select__label">Option 0</label>
+                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect1" class="__select__label">Новичок</label>
+                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect2" class="__select__label">Любитель</label>
+                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect"/>
+                <label for="singleSelect3" class="__select__label">Профи</label>
+              </div>
+            </div>
+            <label for="" class="form-block">
+              <div class="error"></div>
+              <input type="text" class="form-input" placeholder="Комментарий или вопрос">
+            </label>
+            <div class="form-description">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных.</div>
+            <div class="form-submit">
+              <button class="submit" id="send">Отправить</button>
+              <div class="modal" id="modal">
+                <div class="modalText" id="modalText">
+
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="programs">
+      <div class="programs-level-backgrounds">
+        <div class="programs-level-backg-grey"><img src="img/mask.png" alt=""></div>
+        <div class="programs-level-backg-yellow"><img src="img/mask.png" alt=""></div>
+      </div>
+      <header>
+        <a href="index.html" class="logo-wrapper">
+          <svg class="logo"><use xlink:href="img/sprite.svg#logo"></use></svg>
+        </a>
+        <nav class="nav-header">
+          <a href="about.html" class="nav-item">О нас</a>
+          <a href="programs.html" class="nav-item">Программы</a>
+          <a href="coaches.html" class="nav-item">Тренеры</a>
+          <a href="contacts.html" class="nav-item">Контакты</a>
+        </nav>
+        <div class="burger">
+          <div class="burger-line-1"></div>
+          <div class="burger-line-2"></div>
+        </div>
+      </header>
+      <div class="programs-container">
+        <a href="program-beginner.html" class="programs-item">
+          <div class="programs-item-images">
+            <div class="programs-item-background">
+              <div class="programs-right-text">начинающим</div>
+              <div class="programs-mask"><img  src="img/mask.png" alt=""></div>
+              <img class="programs-item-human" src="img/program-1.png" alt="">
+            </div>
+            <div class="programs-item-text">
+              Для тех, кто хочет научиться основам и сделать свои первые шаги в большом теннисе.
+            </div>
+          </div>
+          <div class="programs-item-text"></div>
+        </a>
+        <a href="program-amateur.html" class="programs-item">
+          <div class="programs-item-images">
+            <div class="programs-item-background">
+              <div class="programs-right-text">любителям</div>
+              <div class="programs-mask"><img  src="img/mask.png" alt=""></div>
+              <img class="programs-item-human" src="img/program-2.png" alt="">
+            </div>
+            <div class="programs-item-text">
+              Для тех, кто хочет иметь постоянную практику и совершенствовать свой уровень игры.             </div>
+          </div>
+          <div class="programs-item-text"></div>
+        </a>
+        <a href="program-professional.html" class="programs-item">
+           <div class="programs-item-images">
+             <div class="programs-item-background">
+               <div class="programs-right-text">профессионалам</div>
+               <div class="programs-mask"><img  src="img/mask.png" alt=""></div>
+               <img class="programs-item-human" src="img/program-3.png" alt="">
+             </div>
+             <div class="programs-item-text">
+               Для тех, кто готовится к крупным турнирам иили поддерживает форму на высоком уровне             </div>
+           </div>
+           <div class="programs-item-text"></div>
+         </a>
+      </div>
+      <div class="programs-level">
+        <div class="programs-level-text">
+          <h1 class="programs-level-title">
+            не знаешь свой уровень?
+          </h1>
+          <div class="programs-level-subtitle">
+            Запишись на первое бесплатное занятие к персональному тренеру,<span> он поможет определиться с выбором</span>
+          </div>
+        </div>
+        <div class="programs-level-images">
+          <div class="ball-container">
+            <svg class="ball-text"><use xlink:href="img/sprite.svg#ball-text"></use></svg>
+            <img class="ball-img" src="img/ball.png" alt="">
+          </div>
+          <div class="programs-level-human"><img  src="img/programs-level-human.png" alt=""></div>
+        </div>
+
+      </div>
+    </div>
+    <footer>
+      <img src="img/mask-2.png" alt="">
+      <div class="footer-content">
+        <a href="index.html"><svg class="logo"><use xlink:href="img/sprite.svg#logo"></use></svg></a>
+        <nav class="nav-footer">
+          <a href="about.html">О нас</a>
+          <a href="programs.html">Программы</a>
+          <a href="coaches.html">Тренеры</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+        <a href="tel:8 123 45 67 89" class="footer-tel">8 123 45 67 89</a>
+      </div>
+      <div class="footer-studio"><a href="https://bigly.studio/" target="_blank"><svg><use xlink:href="img/sprite.svg#studio"></use></svg></a>
+      </div>
+    </footer>
+  </div>
+  <script src="script.min.js"></script>
+</body>
+</html>
