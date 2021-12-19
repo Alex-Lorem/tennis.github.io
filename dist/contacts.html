@@ -33,10 +33,8 @@
           <div class="burger-line-2"></div>
         </div>
       </header>
-
-
-      <div class="contacts-content-wrapper">
-      <div class="contacts-content">
+      <section class="contacts-content-wrapper">
+        <div class="contacts-content">
         <div class="contacts-title">Контактные данные</div>
         <div class="contacts-information">
           <div class="contacts-address">123007, г. Москва, <br> 2-ой Хорошевский проезд, д. 7, к. 1</div>
@@ -63,19 +61,26 @@
               <input type="text" class="form-input" placeholder="Электронная почта*" required>
             </label>
           </div>
-          <label for="" class="form-block">
+          <label for="" class="form-block textarea">
             <div class="error"></div>
             <textarea rows="1" class="form-input" placeholder="Комментарий"></textarea>
           </label>
-          <div class="contacts-submit-wrapper">
-            <button class="contacts-submit" id="contactsSend">Отправить</button>
+          <div class="form-submit">
+            <button class="submit submit-contacts" id="send">Отправить</button>
+            <div class="modal" id="modal">
+              <div class="modalText" id="modalText">
+              </div>
+            </div>
           </div>
         </form>
       </div>
-    </div>
+      </section>
     </div>
     <footer>
-      <img src="img/mask-2.png" alt="">
+      <picture>
+        <source type="image/webp" srcset="img/mask-2.webp" alt="">
+        <img src="img/mask-2.png" alt="">
+      </picture>
       <div class="footer-content">
         <a href="index.html"><svg class="logo"><use xlink:href="img/sprite.svg#logo"></use></svg></a>
         <nav class="nav-footer">
@@ -86,7 +91,7 @@
         </nav>
         <a href="tel:8 123 45 67 89" class="footer-tel">8 123 45 67 89</a>
       </div>
-      <div class="footer-studio"><a href="https://bigly.studio/" target="_blank"><svg><use xlink:href="img/sprite.svg#studio"></use></svg></a>
+      <div class="footer-studio"><a target="_blank" href="https://bigly.studio/"><svg><use xlink:href="img/sprite.svg#studio"></use></svg></a>
       </div>
     </footer>
   </div>

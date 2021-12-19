@@ -11,19 +11,24 @@
 <body>
     <div class="wrapper">
         <div class="popup">
-
             <div class="popup-background"></div>
             <div class="popup-content">
                 <div class="popup-content-background">
                     <div class="popup-content-background-yellow">
-                        <img src="img/mask.png" alt="">
+                        <picture>
+                            <source type="image/webp" srcset="img/mask.webp" alt="">
+                            <img src="img/mask.png" alt="">
+                        </picture>
                     </div>
                 </div>
                 <a href="#" class="popup-close">
                     <svg><use xlink:href="img/sprite.svg#popup-close"></use></svg>
                 </a>
                 <div class="popup-human">
-                    <img src="img/about-human-2.png" alt="">
+                    <picture>
+                        <source type="image/webp" srcset="img/about-human-2.webp" alt="">
+                        <img src="img/about-human-2.png" alt="">
+                    </picture>
                 </div>
                 <div class="form-wrapper">
                     <div class="form-title">ЗАПИСАТЬСЯ НА <span>ПРОБНОЕ ЗАНЯТИЕ</span></div>
@@ -54,12 +59,11 @@
                             <div class="error"></div>
                             <input type="text" class="form-input" placeholder="Комментарий или вопрос">
                         </label>
-                        <div class="form-description">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных.</div>
+                        <div class="form-description">Нажимая на кнопку <span>«Отправить»</span>, вы даете согласие на обработку своих персональных данных.</div>
                         <div class="form-submit">
-                            <button class="submit" id="send">Отправить</button>
+                            <button class="submit submit-popup" id="send">Отправить</button>
                             <div class="modal" id="modal">
                                 <div class="modalText" id="modalText">
-
                                 </div>
                             </div>
                         </div>
@@ -67,6 +71,7 @@
                 </div>
             </div>
         </div>
+
         <div class="program-background">
             <div class="program-background-yellow"><img src="img/mask.png" alt=""></div>
             <div class="program-background-grey"><img src="img/mask.png" alt=""></div>
@@ -87,48 +92,48 @@
                 <div class="burger-line-2"></div>
             </div>
         </header>
-        <div class="program-welcome">
+        <section class="program-welcome">
             <div><img class="program-welcome-img" src="img/program-3.png" alt=""></div>
             <div class="program-welcome-text">
                 <h1 class="program-welcome-title">программа<br> для профессионалов</h1>
-                <div class="program-welcome-subtitle">
+                <p class="program-welcome-subtitle">
                     Данная программа поможет теннисистам, занимающимся профессионально на постоянной основе поддерживать форму или подготовиться к крупному теннисному турниру.
                     Программа включает в себя все возможные виды тренировок на корте, тренировки в спортивном зале, тесты и индивидуальный разбор физических показателей,
-                    а также видеоразбор игровой техники и выполнения упражнений на индивидуальных тренировках.</div>
+                    а также видеоразбор игровой техники и выполнения упражнений на индивидуальных тренировках.</p>
             </div>
-        </div>
-        <div class="program-coaches">
+        </section>
+        <section class="program-coaches">
             <h2 class="program-coaches-title">Тренеры программы</h2>
             <div class="coaches-trio">
                 <div class="coaches-trio-item">
                     <img src="img/coach-professional-1.jpg" alt="">
                     <div class="coaches-trio-item-title">Новиков Иван Анатольевич</div>
-                    <div class="coaches-trio-item-subtitle">Тренер-преподаватель I категории;<br> тренер программы для профессионалов</div>
+                    <p class="coaches-trio-item-subtitle">Тренер-преподаватель I категории;<br> тренер программы для профессионалов</p>
                 </div>
                 <div class="coaches-trio-item">
                     <img src="img/coach-professional-2.jpg" alt="">
                     <div class="coaches-trio-item-title">Бородин Сергей Александрович</div>
-                    <div class="coaches-trio-item-subtitle">Тренер-преподаватель I категории;<br> Тренер программы для профессионалов </div>
+                    <p class="coaches-trio-item-subtitle">Тренер-преподаватель I категории;<br> Тренер программы для профессионалов </p>
                 </div>
                 <div class="coaches-trio-item">
                     <img src="img/coach-professional-3.jpg" alt="">
                     <div class="coaches-trio-item-title">Дубовицкий Кирилл Андреевич</div>
-                    <div class="coaches-trio-item-subtitle">Тренер-преподаватель I категории; <br> тренер-спарринг</div>
+                    <p class="coaches-trio-item-subtitle">Тренер-преподаватель I категории; <br> тренер-спарринг</p>
                 </div>
             </div>
-        </div>
-        <div class="program-description">
+        </section>
+        <section class="program-description">
             <div class="program-description-background">
                 <img src="img/mask-2.png" alt="">
             </div>
-            <div class="program-description-1">
+            <p class="program-description-1">
                 Основа уроков тенниса для профессионалов - индивидуальное обучение теннису. Именно на базе обучения в персональном режиме лежит путь спортсмена к успеху. Наша школа поддерживает индивидуальный формат занятий, предоставляя своим ученикам, выбравшим теннис в качестве движущей силы своей карьеры, квалифицированных дипломированных тренеров.
-            </div>
-            <div class="program-description-2">
+            </p>
+            <p class="program-description-2">
                 Если спортсмен решил посвятить себя большому теннису, как спорту, он должен ежедневно тренироваться, нарабатывать навыки, оттачивать спортивное мастерство, регулярно играть на счет и выступать на профессиональных турнирах по теннису. Инструкторы, занимающиеся подготовкой профессионалов, следят за разработкой перспективных методик обучения теннису, внося оперативные коррективы в образовательные программы своих учеников. Профессиональный теннисист выходит на корт с целью достижения самого высокого игрового результата. Современный  большой теннис сложно представить без технической подготовки. Все удары должны быть наработаны до автоматизма, ведь на корте во время турнира у спортсмена не будет возможности думать и анализировать, он должен поступать рефлекторно. Инструкторы, занимающиеся подготовкой профессионалов, следят за разработкой перспективных методик обучения теннису, внося оперативные коррективы в образовательные программы своих учеников.
-            </div>
-        </div>
-        <div class="program-pack">
+            </p>
+        </section>
+        <section class="program-pack">
             <div class="program-pack-container">
                 <div class="pack-table">
                     <div class="pack-table-item">
@@ -176,10 +181,13 @@
                     <img class="ball-img" src="img/ball.png" alt="">
                 </div>
             </div>
-        </div>
+        </section>
     </div>
-        <footer >
-            <img src="img/mask-2.png" alt="">
+        <footer>
+            <picture>
+                <source type="image/webp" srcset="img/mask-2.webp" alt="">
+                <img src="img/mask-2.png" alt="">
+            </picture>
             <div class="footer-content">
                 <a href="index.html"><svg class="logo"><use xlink:href="img/sprite.svg#logo"></use></svg></a>
                 <nav class="nav-footer">
@@ -190,7 +198,7 @@
                 </nav>
                 <a href="tel:8 123 45 67 89" class="footer-tel">8 123 45 67 89</a>
             </div>
-            <div class="footer-studio"><a href="https://bigly.studio/" target="_blank"><svg><use xlink:href="img/sprite.svg#studio"></use></svg></a>
+            <div class="footer-studio"><a target="_blank" href="https://bigly.studio/"><svg><use xlink:href="img/sprite.svg#studio"></use></svg></a>
             </div>
         </footer>
 

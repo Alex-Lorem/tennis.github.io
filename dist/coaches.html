@@ -11,19 +11,24 @@
 <body>
   <div class="wrapper">
     <div class="popup">
-
       <div class="popup-background"></div>
       <div class="popup-content">
         <div class="popup-content-background">
           <div class="popup-content-background-yellow">
-            <img src="img/mask.png" alt="">
+            <picture>
+              <source type="image/webp" srcset="img/mask.webp" alt="">
+              <img src="img/mask.png" alt="">
+            </picture>
           </div>
         </div>
         <a href="#" class="popup-close">
           <svg><use xlink:href="img/sprite.svg#popup-close"></use></svg>
         </a>
         <div class="popup-human">
-          <img src="img/about-human-2.png" alt="">
+          <picture>
+            <source type="image/webp" srcset="img/about-human-2.webp" alt="">
+            <img src="img/about-human-2.png" alt="">
+          </picture>
         </div>
         <div class="form-wrapper">
           <div class="form-title">ЗАПИСАТЬСЯ НА <span>ПРОБНОЕ ЗАНЯТИЕ</span></div>
@@ -54,12 +59,11 @@
               <div class="error"></div>
               <input type="text" class="form-input" placeholder="Комментарий или вопрос">
             </label>
-            <div class="form-description">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных.</div>
+            <div class="form-description">Нажимая на кнопку <span>«Отправить»</span>, вы даете согласие на обработку своих персональных данных.</div>
             <div class="form-submit">
-              <button class="submit" id="send">Отправить</button>
+              <button class="submit submit-popup" id="send">Отправить</button>
               <div class="modal" id="modal">
                 <div class="modalText" id="modalText">
-
                 </div>
               </div>
             </div>
@@ -67,6 +71,7 @@
         </div>
       </div>
     </div>
+
     <div class="coaches">
       <div class="coaches-background">
         <div class="coaches-background-grey"><img src="img/mask.png" alt=""></div>
@@ -87,66 +92,69 @@
           <div class="burger-line-2"></div>
         </div>
       </header>
-      <div class="coaches-container">
+      <section class="coaches-container">
         <div class="coaches-trio">
           <div class="coaches-trio-item">
             <img src="img/coach-professional-1.jpg" alt="">
             <div class="coaches-trio-item-title">Новиков Иван Анатольевич</div>
-            <div class="coaches-trio-item-subtitle">Тренер-преподаватель I категории;<br> тренер программы для профессионалов</div>
+            <p class="coaches-trio-item-subtitle">Тренер-преподаватель I категории;<br> тренер программы для профессионалов</p>
           </div>
           <div class="coaches-trio-item">
             <img src="img/coach-professional-2.jpg" alt="">
             <div class="coaches-trio-item-title">Бородин Сергей Александрович</div>
-            <div class="coaches-trio-item-subtitle">Тренер-преподаватель I категории;<br> Тренер программы для профессионалов </div>
+            <p class="coaches-trio-item-subtitle">Тренер-преподаватель I категории;<br> Тренер программы для профессионалов </p>
           </div>
           <div class="coaches-trio-item">
             <img src="img/coach-professional-3.jpg" alt="">
             <div class="coaches-trio-item-title">Дубовицкий Кирилл Андреевич</div>
-            <div class="coaches-trio-item-subtitle">Тренер-преподаватель I категории; <br> тренер-спарринг</div>
+            <p class="coaches-trio-item-subtitle">Тренер-преподаватель I категории; <br> тренер-спарринг</p>
           </div>
         </div>
         <div class="coaches-trio">
           <div class="coaches-trio-item">
             <img src="img/coach-amateur-1.jpg" alt="">
             <div class="coaches-trio-item-title">Шалимов Максим Иванович</div>
-            <div class="coaches-trio-item-subtitle">Тренер-преподаватель II категории;<br> Любительская теннисная лига </div>
+            <p class="coaches-trio-item-subtitle">Тренер-преподаватель II категории;<br> Любительская теннисная лига </p>
           </div>
           <div class="coaches-trio-item">
             <img src="img/coach-amateur-2.jpg" alt="">
             <div class="coaches-trio-item-title">Макаров Артем Александрович</div>
-            <div class="coaches-trio-item-subtitle">Тренер-преподаватель II категории;<br> тренер-спарринг</div>
+            <p class="coaches-trio-item-subtitle">Тренер-преподаватель II категории;<br> тренер-спарринг</p>
           </div>
           <div class="coaches-trio-item">
             <img src="img/coach-amateur-3.jpg" alt="">
             <div class="coaches-trio-item-title">Лаврентьев Сергей Николаевич</div>
-            <div class="coaches-trio-item-subtitle">Тренер-преподаватель I категории,<br> тренер-спарринг; тренер программы для любителей</div>
+            <p class="coaches-trio-item-subtitle">Тренер-преподаватель I категории,<br> тренер-спарринг; тренер программы для любителей</p>
           </div>
         </div>
         <div class="coaches-trio">
           <div class="coaches-trio-item">
             <img src="img/coach-beginner-1.jpg" alt="">
             <div class="coaches-trio-item-title">Шамуродова Инна Борисовна</div>
-            <div class="coaches-trio-item-subtitle">Тренер-преподаватель II категории;<br> Тренер программы для начинающих</div>
+            <p class="coaches-trio-item-subtitle">Тренер-преподаватель II категории;<br> Тренер программы для начинающих</p>
           </div>
           <div class="coaches-trio-item">
             <img src="img/coach-beginner-2.jpg" alt="">
             <div class="coaches-trio-item-title">Кузнецов Олег Владимирович</div>
-            <div class="coaches-trio-item-subtitle">Тренер-преподаватель II категории;<br> Тренер программы для начинающих</div>
+            <p class="coaches-trio-item-subtitle">Тренер-преподаватель II категории;<br> Тренер программы для начинающих</p>
           </div>
           <div class="coaches-trio-item">
             <img src="img/coach-beginner-3.jpg" alt="">
             <div class="coaches-trio-item-title">Павленко Алексей Петрович</div>
-            <div class="coaches-trio-item-subtitle">Тренер-преподаватель III категории,<br> тренер-спарринг; тренер программы<br> для начинающих</div>
+            <p class="coaches-trio-item-subtitle">Тренер-преподаватель III категории,<br> тренер-спарринг; тренер программы<br> для начинающих</p>
           </div>
         </div>
-      </div>
+      </section>
       <div class="ball-container">
         <svg class="ball-text"><use xlink:href="img/sprite.svg#ball-text"></use></svg>
         <img class="ball-img" src="img/ball.png" alt="">
       </div>
     </div>
     <footer>
-      <img src="img/mask-2.png" alt="">
+      <picture>
+        <source type="image/webp" srcset="img/mask-2.webp" alt="">
+        <img src="img/mask-2.png" alt="">
+      </picture>
       <div class="footer-content">
         <a href="index.html"><svg class="logo"><use xlink:href="img/sprite.svg#logo"></use></svg></a>
         <nav class="nav-footer">
@@ -157,7 +165,7 @@
         </nav>
         <a href="tel:8 123 45 67 89" class="footer-tel">8 123 45 67 89</a>
       </div>
-      <div class="footer-studio"><a href="https://bigly.studio/" target="_blank"><svg><use xlink:href="img/sprite.svg#studio"></use></svg></a>
+      <div class="footer-studio"><a target="_blank" href="https://bigly.studio/"><svg><use xlink:href="img/sprite.svg#studio"></use></svg></a>
       </div>
     </footer>
   </div>

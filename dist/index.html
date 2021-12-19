@@ -11,19 +11,24 @@
 <body>
     <div class="wrapper">
         <div class="popup">
-
             <div class="popup-background"></div>
             <div class="popup-content">
                 <div class="popup-content-background">
                     <div class="popup-content-background-yellow">
-                        <img src="img/mask.png" alt="">
+                        <picture>
+                            <source type="image/webp" srcset="img/mask.webp" alt="">
+                            <img src="img/mask.png" alt="">
+                        </picture>
                     </div>
                 </div>
                 <a href="#" class="popup-close">
                     <svg><use xlink:href="img/sprite.svg#popup-close"></use></svg>
                 </a>
                 <div class="popup-human">
-                    <img src="img/about-human-2.png" alt="">
+                    <picture>
+                        <source type="image/webp" srcset="img/about-human-2.webp" alt="">
+                        <img src="img/about-human-2.png" alt="">
+                    </picture>
                 </div>
                 <div class="form-wrapper">
                     <div class="form-title">ЗАПИСАТЬСЯ НА <span>ПРОБНОЕ ЗАНЯТИЕ</span></div>
@@ -54,12 +59,11 @@
                             <div class="error"></div>
                             <input type="text" class="form-input" placeholder="Комментарий или вопрос">
                         </label>
-                        <div class="form-description">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных.</div>
+                        <div class="form-description">Нажимая на кнопку <span>«Отправить»</span>, вы даете согласие на обработку своих персональных данных.</div>
                         <div class="form-submit">
-                            <button class="submit" id="send">Отправить</button>
+                            <button class="submit submit-popup" id="send">Отправить</button>
                             <div class="modal" id="modal">
                                 <div class="modalText" id="modalText">
-
                                 </div>
                             </div>
                         </div>
@@ -69,10 +73,16 @@
         </div>
         <div class="first">
             <div class="first-background-human">
-                <img src="img/first.png" alt="">
+                <picture>
+                    <source type="image/webp" srcset="img/first.webp" alt="">
+                    <img src="img/first.png" alt="">
+                </picture>
                 <div class="ball-container">
                     <svg class="ball-text"><use xlink:href="img/sprite.svg#ball-text"></use></svg>
-                    <img class="ball-img" src="img/ball.png" alt="">
+                    <picture>
+                        <source type="image/webp" srcset="img/ball.webp" alt="">
+                        <img src="img/ball.png" alt="">
+                    </picture>
                 </div>
             </div>
             <div class="first-backgrounds">
@@ -102,14 +112,14 @@
                 <div class="burger-line-2"></div>
             </a>
         </header>
-            <div class="first-content">
+            <section class="first-content">
         <h1 class="first-title">
             Стань профессионалом <span>большого тенниса</span>
         </h1>
         <div class="first-subtitle">
             Запишитесь на первое бесплатное занятие с персональным тренером, <p> вы определите свой уровень игры и получите рекомендации по тренировкам</p>
         </div>
-            </div>
+            </section>
         </div>
     </div>
     <script src="script.min.js"></script>

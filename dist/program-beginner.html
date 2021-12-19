@@ -11,19 +11,24 @@
 <body>
     <div class="wrapper">
         <div class="popup">
-
             <div class="popup-background"></div>
             <div class="popup-content">
                 <div class="popup-content-background">
                     <div class="popup-content-background-yellow">
-                        <img src="img/mask.png" alt="">
+                        <picture>
+                            <source type="image/webp" srcset="img/mask.webp" alt="">
+                            <img src="img/mask.png" alt="">
+                        </picture>
                     </div>
                 </div>
                 <a href="#" class="popup-close">
                     <svg><use xlink:href="img/sprite.svg#popup-close"></use></svg>
                 </a>
                 <div class="popup-human">
-                    <img src="img/about-human-2.png" alt="">
+                    <picture>
+                        <source type="image/webp" srcset="img/about-human-2.webp" alt="">
+                        <img src="img/about-human-2.png" alt="">
+                    </picture>
                 </div>
                 <div class="form-wrapper">
                     <div class="form-title">ЗАПИСАТЬСЯ НА <span>ПРОБНОЕ ЗАНЯТИЕ</span></div>
@@ -54,12 +59,11 @@
                             <div class="error"></div>
                             <input type="text" class="form-input" placeholder="Комментарий или вопрос">
                         </label>
-                        <div class="form-description">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных.</div>
+                        <div class="form-description">Нажимая на кнопку <span>«Отправить»</span>, вы даете согласие на обработку своих персональных данных.</div>
                         <div class="form-submit">
-                            <button class="submit" id="send">Отправить</button>
+                            <button class="submit submit-popup" id="send">Отправить</button>
                             <div class="modal" id="modal">
                                 <div class="modalText" id="modalText">
-
                                 </div>
                             </div>
                         </div>
@@ -67,6 +71,7 @@
                 </div>
             </div>
         </div>
+
         <div class="program-background">
             <div class="program-background-yellow"><img src="img/mask.png" alt=""></div>
             <div class="program-background-grey"><img src="img/mask.png" alt=""></div>
@@ -87,46 +92,47 @@
                     <div class="burger-line-2"></div>
                 </div>
             </header>
-            <div class="program-welcome">
+            <section class="program-welcome">
                 <div><img class="program-welcome-img" src="img/program-1.png" alt=""></div>
                 <div class="program-welcome-text">
                     <h1 class="program-welcome-title">программа<br> для начинающих</h1>
-                    <div class="program-welcome-subtitle">Данная программа позволит обучиться игре в большой теннис начинающему любого уровня подготовки. Самое главное — ваше желание.
-                        На занятие может попасть человек любого возраста и владения теннисной ракеткой. Инструкторы и тренеры нашей спортивной школы успешно адаптируют методики тренировок действующих теннисистов и обучат вас всему – от того, каким должен быть правильный хват ракетки, до работы ног теннисиста между подачами и ударами.</div>
+                    <p class="program-welcome-subtitle">Данная программа позволит обучиться игре в большой теннис начинающему любого уровня подготовки. Самое главное — ваше желание.
+                        На занятие может попасть человек любого возраста и владения теннисной ракеткой. Инструкторы и тренеры нашей спортивной школы успешно адаптируют методики тренировок действующих теннисистов и обучат вас всему – от того, каким должен быть правильный хват ракетки, до работы ног теннисиста между подачами и ударами.
+                    </p>
                 </div>
-            </div>
-            <div class="program-coaches">
+            </section>
+            <section class="program-coaches">
                 <h2 class="program-coaches-title">Тренеры программы</h2>
                 <div class="coaches-trio">
                     <div class="coaches-trio-item">
                         <img src="img/coach-beginner-1.jpg" alt="">
                         <div class="coaches-trio-item-title">Шамуродова Инна Борисовна</div>
-                        <div class="coaches-trio-item-subtitle">Тренер-преподаватель II категории;<br> Тренер программы для начинающих</div>
+                        <p class="coaches-trio-item-subtitle">Тренер-преподаватель II категории;<br> Тренер программы для начинающих</p>
                     </div>
                     <div class="coaches-trio-item">
                         <img src="img/coach-beginner-2.jpg" alt="">
                         <div class="coaches-trio-item-title">Кузнецов Олег Владимирович</div>
-                        <div class="coaches-trio-item-subtitle">Тренер-преподаватель II категории;<br> Тренер программы для начинающих</div>
+                        <p class="coaches-trio-item-subtitle">Тренер-преподаватель II категории;<br> Тренер программы для начинающих</p>
                     </div>
                     <div class="coaches-trio-item">
                         <img src="img/coach-beginner-3.jpg" alt="">
                         <div class="coaches-trio-item-title">Павленко Алексей Петрович</div>
-                        <div class="coaches-trio-item-subtitle">Тренер-преподаватель III категории,<br> тренер-спарринг; тренер программы<br> для начинающих</div>
+                        <p class="coaches-trio-item-subtitle">Тренер-преподаватель III категории,<br> тренер-спарринг; тренер программы<br> для начинающих</p>
                     </div>
                 </div>
-            </div>
-            <div class="program-description">
+            </section>
+            <section class="program-description">
                 <div class="program-description-background">
                     <img src="img/mask-2.png" alt="">
                 </div>
-                <div class="program-description-1">
+                <p class="program-description-1">
                     Игра в большой теннис состоит из множества сложных приемов, каждый из которых новичок должен освоить для того, чтобы поставить правильную технику игры и стать способным выдерживать матч против опытного соперника. Уроки тенниса в нашей школе включают в себя разминку, выполнение упражнений на увеличение скорости реакций, силы и выносливости, координации движений, оттачивание матчевых и спарринг-приемов, и спарринг с партнерами по тренировке (в случае группового занятия) или с тренером.
-                </div>
-                <div class="program-description-2">Занятия теннисом для начинающих не сильно отличаются от занятий профессиональных теннисистов – меняется только уровень сложностей выполняемых упражнений и отрабатываемых приемов, структура остается точно такой же.
+                </p>
+                <p class="program-description-2">Занятия теннисом для начинающих не сильно отличаются от занятий профессиональных теннисистов – меняется только уровень сложностей выполняемых упражнений и отрабатываемых приемов, структура остается точно такой же.
                     Каждый этап урока тенниса чрезвычайно важен – разминка необходима для правильного разогрева мышц и сухожилий, и минимизации возможности возникновения травм. Упражнения для улучшения общей физической подготовки, координации движений и постановки техники дают спортсмену возможность успешно выступать в обучающих спаррингах и соревнованиях разного уровня, некоторые из которых проводятся на базе спортивного клуба Best Tennis. Сам процесс игры в теннис в обучающем режиме происходит либо со спарринг-партнером, который также обучается в вашей группе, либо с тренером. В индивидуальном же порядке вы имеете возможность проработать все нужные упражнения и технические моменты один на один с тренером, что дает дополнительные возможности для быстрого спортивного роста.
-                </div>
-            </div>
-            <div class="program-pack">
+                </p>
+            </section>
+            <section class="program-pack">
                 <div class="program-pack-container">
                 <div class="pack-table">
                     <div class="pack-table-item">
@@ -166,11 +172,14 @@
                     <img class="ball-img" src="img/ball.png" alt="">
                 </div>
             </div>
-            </div>
+            </section>
 
         </div>
         <footer>
-            <img src="img/mask-2.png" alt="">
+            <picture>
+                <source type="image/webp" srcset="img/mask-2.webp" alt="">
+                <img src="img/mask-2.png" alt="">
+            </picture>
             <div class="footer-content">
                 <a href="index.html"><svg class="logo"><use xlink:href="img/sprite.svg#logo"></use></svg></a>
                 <nav class="nav-footer">
@@ -181,7 +190,7 @@
                 </nav>
                 <a href="tel:8 123 45 67 89" class="footer-tel">8 123 45 67 89</a>
             </div>
-            <div class="footer-studio"><a href="https://bigly.studio/" target="_blank"><svg><use xlink:href="img/sprite.svg#studio"></use></svg></a>
+            <div class="footer-studio"><a target="_blank" href="https://bigly.studio/"><svg><use xlink:href="img/sprite.svg#studio"></use></svg></a>
             </div>
         </footer>
     </div>

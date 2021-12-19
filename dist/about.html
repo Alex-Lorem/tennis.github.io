@@ -11,19 +11,24 @@
 <body>
   <div class="wrapper">
       <div class="popup">
-
           <div class="popup-background"></div>
           <div class="popup-content">
               <div class="popup-content-background">
                   <div class="popup-content-background-yellow">
-                      <img src="img/mask.png" alt="">
+                      <picture>
+                          <source type="image/webp" srcset="img/mask.webp" alt="">
+                          <img src="img/mask.png" alt="">
+                      </picture>
                   </div>
               </div>
               <a href="#" class="popup-close">
                   <svg><use xlink:href="img/sprite.svg#popup-close"></use></svg>
               </a>
               <div class="popup-human">
-                  <img src="img/about-human-2.png" alt="">
+                  <picture>
+                      <source type="image/webp" srcset="img/about-human-2.webp" alt="">
+                      <img src="img/about-human-2.png" alt="">
+                  </picture>
               </div>
               <div class="form-wrapper">
                   <div class="form-title">ЗАПИСАТЬСЯ НА <span>ПРОБНОЕ ЗАНЯТИЕ</span></div>
@@ -54,12 +59,11 @@
                           <div class="error"></div>
                           <input type="text" class="form-input" placeholder="Комментарий или вопрос">
                       </label>
-                      <div class="form-description">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных.</div>
+                      <div class="form-description">Нажимая на кнопку <span>«Отправить»</span>, вы даете согласие на обработку своих персональных данных.</div>
                       <div class="form-submit">
-                          <button class="submit" id="send">Отправить</button>
+                          <button class="submit submit-popup" id="send">Отправить</button>
                           <div class="modal" id="modal">
                               <div class="modalText" id="modalText">
-
                               </div>
                           </div>
                       </div>
@@ -67,13 +71,20 @@
               </div>
           </div>
       </div>
+
       <div class="about">
           <div class="about-backgrounds">
               <div class="about-backg-yellow">
-                  <img src="img/mask.png" alt="">
+                  <picture>
+                      <source type="image/webp" srcset="img/mask.webp" alt="">
+                      <img src="img/mask.png" alt="">
+                  </picture>
               </div>
               <div class="about-backg-grey">
-                  <img src="img/mask.png" alt="">
+                  <picture>
+                      <source type="image/webp" srcset="img/mask.webp" alt="">
+                      <img src="img/mask.png" alt="">
+                  </picture>
               </div>
           </div>
           <header>
@@ -91,37 +102,46 @@
                       <div class="burger-line-2"></div>
                   </div>
               </header>
-              <div class="about-welcome-content">
+          <section class="about-welcome-content">
               <h1 class="about-title">
                   TENNIS PRO SCHOOL
               </h1>
               <div class="about-subtitle-container">
               <div class="about-human">
-                  <img src="img/about-human.png" alt="">
+                  <picture>
+                      <source type="image/webp" srcset="img/about-human.webp" alt="">
+                      <img src="img/about-human.png" alt="">
+                  </picture>
               </div>
-                  <div class="about-subtitle">
+                  <p class="about-subtitle">
                       <span>Tennis Pro School – </span> это школа тенниса, соответствующая самым высоким стандартам и предлагающая посетителям широкий спектр услуг – от занятий теннисом до сдачи в аренду кортов и продажи специализированного инвентаря. Tennis Pro School является одной из крупнейших теннисных школ. В ней проводятся подготовка спортсменов к нескольким ежегодным турнирам Российского теннисного тура в различных возрастных категориях, а также соревнованиям международного уровня в различных возрастах.
-                  </div>
+                  </p>
               </div>
-              </div>
-
-          <div class="program-description about-description">
+              </section>
+          <section class="program-description about-description">
               <div class="program-description-background">
-                  <img src="img/mask-2.png" alt="">
+                  <picture>
+                      <source type="image/webp" srcset="img/mask-2.webp" alt="">
+                      <img src="img/mask-2.png" alt="">
+                  </picture>
               </div>
-              <div class="program-description-1">
-                  Новички, уже сформировавшие определенную игровую базу, проходят обучение по более прогрессивной схеме - с многочисленными практическими занятиями и серьезным знакомством с техникой подач, ударов, методиками включения, расслабления, типовыми стратегическими схемами. При достижении определенного уровня вчерашний новичок становится профессиональным любителем и получает возможность защищать честь своей спортивной школы на соревнованиях.
-              </div>
-              <div class="program-description-2">Тренировки теннисистов-любителей мало чем отличаются от тренировок профессиональных спортсменов. Единственное, что можно отметить, им достаточно 3 интенсивных тренировок в неделю для того, чтобы поддерживать себя в форме и наработать основные навыки, необходимые для теннисиста. Современный любительский большой теннис сложно представить без технической подготовки. Она включает в себя наработку всех существующих ударов в теннисе. Это: подачи, удары справа и слева открытой стороной ракетки, смэши, свечи, удары с лета у самой сетки. Теннисист обязан уметь придавать во время ударов вращение мячу (нижнее, боковое).
-                  Силовые упражнения укрепляют мышцы ног, ведь теннисистам приходится много и активно передвигаться. Для укрепления мышц бедер и голеней используются такие упражнения, как: прыжки в длину, в высоту, из стороны в сторону, бег с высоким поднятием колен. Не будут лишними для спортсмена дополнительные тренировки в тренажерном зале с нагрузкой на мышцы ног.
-              </div>
-          </div>
-          <div class="about-video-container">
-              <div class="about-video-decorations">
-                  <div class="video-plug">
-                      <img src="img/about-video.png" alt="">
-                      <div class="video"></div>
-                  </div>
+              <p class="program-description-1">
+                  Перенимая опыт лучших западных школ, мы постоянно улучшаем качество наших тренировок и внедряем технические новшества, не забывая при этом, что одной из главных задач, которую мы ставим перед собой является доступность спорта в Москве. Именно поэтому сделано всё возможное, чтобы предложить как можно более комфортные условия на занятия в <span>Tennis Pro School</span>.
+              </p>
+              <p class="program-description-2">
+                  Наша школа тенниса в Москве зарождалась как простая идея, для реализации которой требовались лучшие мастера, ученики, опыт работы с людьми. Постепенно идея развивалась и получила свое воплощение в жизнь. Разумеется, мы очень гордимся успехами, которых достигают члены нашей школы на уровне профессиональных и любительских соревнований. Мы специализируемся на: обучении теннису детей, обучении теннису взрослых, а также на проведении небольших теннисных турниров в рамках членов школы. В результате каждый, кто приходит к нам заниматься, получает не только опыт в игре, но и заряд соревновательного духа, который так необходим любому спортсмену. Теннисная школа Tennis Pro School давно выявила алгоритм того, что необходимо для успешного развития спортивного клуба в таком городе, как Москва. Самое главное — профессиональные тренеры по теннису, опыт и знания, которых не подвергаются сомнению;  запас терпения в плане помощи новым ученикам на первоначальном этапе существования; в развитии профессиональных навыков и умений. <span>И здесь мы не подведем, можете не сомневаться!</span>
+              </p>
+          </section>
+          <section class="about-video-container">
+                    <div class="player-wrapper">
+                        <div class="player-background"></div>
+                        <div class="player"></div>
+                    </div>
+              <picture>
+                  <source type="image/webp" srcset="img/about-video.webp" alt="">
+                  <img src="img/about-video.png" alt="">
+              </picture>
+
                   <div class="video-title-wrapper">
                       <h2 class="video-title">
                           #1 <br> школа ТЕННИСА <br> В Москве
@@ -133,23 +153,31 @@
                       </div>
                   </div>
                   </div>
-              </div>
-          </div>
-          <div class="about-inspiration">
+
+          </section>
+          <section class="about-inspiration">
               <div class="inspiration-success">
-                  <div class="inspiration-inner-1">Успехи учеников</div>
-                  <div class="inspiration-inner-2">Мы проводим обучение, как новичков, впервые взявших ракетку в руки, так и профессионалов, которым требуется улучшить нюансы в технике, поработать над тактикой и психологией, чтобы начать побеждать.</div>
+                  <h3 class="inspiration-inner-1">Успехи учеников</h3>
+                  <p class="inspiration-inner-2">Мы проводим обучение, как новичков, впервые взявших ракетку в руки, так и профессионалов, которым требуется улучшить нюансы в технике, поработать над тактикой и психологией, чтобы начать побеждать.</p>
               </div>
               <div class="human-container">
-                  <div class="human-img"><img src="img/about-human-2.png" alt=""></div>
-                  <div class="human-text">
-                      Что такое развитие для спортивной организации? Это возможность наблюдать за ростом личного профессионализма каждого члена школы. Вот уже много лет мы проводим занятия большим теннисом для взрослых и детей в столице нашей страны. За это время мы достигли определенных успехов и добились популярности среди учеников. Однако в московской школе тенниса Tennis Pro School больше всего гордятся положительными отзывами каждого из учеников о работе организации и уровне проведения тренировочных занятий. В результате становится понятно, что любая идея, даже самая необычная и сумасшедшая, может найти свою реализацию в жизни. Если твердо идти по намеченному пути, надеясь на успех и веря в него, можно определенно достигнуть успеха, а оглянувшись назад, даже не обнаружить существенных препятствий.
+                  <div class="human-img">
+                      <picture>
+                          <source type="image/webp" srcset="img/about-human-2.webp" alt="">
+                          <img src="img/about-human-2.png" alt="">
+                      </picture>
                   </div>
+                  <p class="human-text">
+                      Что такое развитие для спортивной организации? Это возможность наблюдать за ростом личного профессионализма каждого члена школы. Вот уже много лет мы проводим занятия большим теннисом для взрослых и детей в столице нашей страны. За это время мы достигли определенных успехов и добились популярности среди учеников. Однако в московской школе тенниса Tennis Pro School больше всего гордятся положительными отзывами каждого из учеников о работе организации и уровне проведения тренировочных занятий. В результате становится понятно, что любая идея, даже самая необычная и сумасшедшая, может найти свою реализацию в жизни. Если твердо идти по намеченному пути, надеясь на успех и веря в него, можно определенно достигнуть успеха, а оглянувшись назад, даже не обнаружить существенных препятствий.
+                  </p>
               </div>
               <div class="inspiration-background-container">
-                  <img src="img/mask.png" alt="">
+                  <picture>
+                      <source type="image/webp" srcset="img/mask.webp" alt="">
+                      <img src="img/mask.png" alt="">
+                  </picture>
               </div>
-          </div>
+          </section>
           <div class="about-statistic">
               <div class="statistic-inner">
                   <div class="statistic-item"><span>17</span> кортов</div>
@@ -157,33 +185,66 @@
                   <div class="statistic-item"><span>2</span> спортзала</div>
               </div>
           </div>
-          <div class="about-founder">
-              <img src="img/about-founder.png" alt="">
+          <section class="about-founder">
+              <div class="about-founder-img">
+              <picture>
+                  <source type="image/webp" srcset="img/about-founder.webp" alt="">
+                  <img src="img/about-founder.png" alt="">
+              </picture>
+              </div>
               <div class="founder-content">
                   <div class="founder-title">ОБ ОСНОВАТЕЛЕ</div>
-                  <div class="founder-subtitle">Богданов Алексей Кириллович — основатель школы тенниса «Tennis Pro School». Тренировался в Международной Теннисной Академии Гамбурга. Играл вторым номером в Германии за мужскую команду по теннису в городе Elmshorn национальная лига (Landesliga). Призер ряда престижных турниров: чемпионат Гамбурга; Schwartau Open; Stadtwerke Pinneberg Cup. Занимал позицию A985 в квалификации DTB. В 2010 году получил звание мастера спорта. В 2015 году основал школу тенниса «Tennis Pro School».</div>
+                  <p class="founder-subtitle">Богданов Алексей Кириллович — основатель школы тенниса «Tennis Pro School». Тренировался в Международной Теннисной Академии Гамбурга. Играл вторым номером в Германии за мужскую команду по теннису в городе Elmshorn национальная лига (Landesliga). Призер ряда престижных турниров: чемпионат Гамбурга; Schwartau Open; Stadtwerke Pinneberg Cup. Занимал позицию A985 в квалификации DTB. В 2010 году получил звание мастера спорта. В 2015 году основал школу тенниса «Tennis Pro School».</p>
               </div>
-          </div>
-          <div class="about-gallery">
+          </section>
+          <section class="about-gallery">
               <div class="gallery-header">
-                  <div class="gallery-inner-1">Галерея</div>
-                  <div class="gallery-inner-2">Команда нашей теннисной академии регулярно проводит профессиональные фотосессии прямо на корте! Занимаясь в нашем клубе вы сможете похвастаться качественными снимками с тренировок. </div>
+                  <h3 class="gallery-inner-1">Галерея</h3>
+                  <p class="gallery-inner-2">Команда нашей теннисной академии регулярно проводит профессиональные фотосессии прямо на корте! Занимаясь в нашем клубе вы сможете похвастаться качественными снимками с тренировок. </p>
               </div>
               <div class="slider">
-                  <div class="slider-item"><img src="img/slider-item-1.png" alt=""></div>
-                  <div class="slider-item"><img src="img/slider-item-2.png" alt=""></div>
-                  <div class="slider-item"><img src="img/slider-item-3.png" alt=""></div>
-                  <div class="slider-item"><img src="img/slider-item-4.png" alt=""></div>
-                  <div class="slider-item"><img src="img/slider-item-5.png" alt=""></div>
+                  <div class="slider-item">
+                      <picture>
+                          <source type="image/webp" srcset="img/slider-item-1.webp" alt="">
+                          <img src="img/slider-item-1.png" alt="">
+                      </picture>
+                  </div>
+                  <div class="slider-item">
+                      <picture>
+                          <source type="image/webp" srcset="img/slider-item-2.webp" alt="">
+                          <img src="img/slider-item-2.png" alt="">
+                      </picture>
+                  </div>
+                  <div class="slider-item">
+                      <picture>
+                          <source type="image/webp" srcset="img/slider-item-3.webp" alt="">
+                          <img src="img/slider-item-3.png" alt="">
+                      </picture>
+                  </div>
+                  <div class="slider-item">
+                      <picture>
+                          <source type="image/webp" srcset="img/slider-item-4.webp" alt="">
+                          <img src="img/slider-item-4.png" alt="">
+                      </picture>
+                  </div>
+                  <div class="slider-item">
+                      <picture>
+                          <source type="image/webp" srcset="img/slider-item-5.webp" alt="">
+                          <img src="img/slider-item-5.png" alt="">
+                      </picture>
+                  </div>
               </div>
-          </div>
+          </section>
           <div class="ball-container">
               <svg class="ball-text"><use xlink:href="img/sprite.svg#ball-text"></use></svg>
               <img class="ball-img" src="img/ball.png" alt="">
           </div>
       </div>
       <footer>
-          <img src="img/mask-2.png" alt="">
+              <picture>
+                  <source type="image/webp" srcset="img/mask-2.webp" alt="">
+                  <img src="img/mask-2.png" alt="">
+              </picture>
           <div class="footer-content">
               <a href="index.html"><svg class="logo"><use xlink:href="img/sprite.svg#logo"></use></svg></a>
               <nav class="nav-footer">

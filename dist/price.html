@@ -12,19 +12,24 @@
 <body>
     <div class="wrapper">
         <div class="popup">
-
             <div class="popup-background"></div>
             <div class="popup-content">
                 <div class="popup-content-background">
                     <div class="popup-content-background-yellow">
-                        <img src="img/mask.png" alt="">
+                        <picture>
+                            <source type="image/webp" srcset="img/mask.webp" alt="">
+                            <img src="img/mask.png" alt="">
+                        </picture>
                     </div>
                 </div>
                 <a href="#" class="popup-close">
                     <svg><use xlink:href="img/sprite.svg#popup-close"></use></svg>
                 </a>
                 <div class="popup-human">
-                    <img src="img/about-human-2.png" alt="">
+                    <picture>
+                        <source type="image/webp" srcset="img/about-human-2.webp" alt="">
+                        <img src="img/about-human-2.png" alt="">
+                    </picture>
                 </div>
                 <div class="form-wrapper">
                     <div class="form-title">ЗАПИСАТЬСЯ НА <span>ПРОБНОЕ ЗАНЯТИЕ</span></div>
@@ -55,12 +60,11 @@
                             <div class="error"></div>
                             <input type="text" class="form-input" placeholder="Комментарий или вопрос">
                         </label>
-                        <div class="form-description">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных.</div>
+                        <div class="form-description">Нажимая на кнопку <span>«Отправить»</span>, вы даете согласие на обработку своих персональных данных.</div>
                         <div class="form-submit">
-                            <button class="submit" id="send">Отправить</button>
+                            <button class="submit submit-popup" id="send">Отправить</button>
                             <div class="modal" id="modal">
                                 <div class="modalText" id="modalText">
-
                                 </div>
                             </div>
                         </div>
@@ -68,6 +72,7 @@
                 </div>
             </div>
         </div>
+
         <div class="price">
             <div class="price-background"></div>
             <header>
@@ -85,7 +90,7 @@
                     <div class="burger-line-2"></div>
                 </div>
             </header>
-            <div class="price-content">
+            <section class="price-content">
                 <img class="price-mask" src="img/mask.png" alt="">
                 <h1 class="price-title">ПРАЙС-ЛИСТ</h1>
                 <div class="price-list">
@@ -130,14 +135,17 @@
                         <div class="price-list-item-2">1 800</div>
                     </div>
                 </div>
-            </div>
+            </section>
             <div class="ball-container">
                 <svg class="ball-text"><use xlink:href="img/sprite.svg#ball-text"></use></svg>
                 <img class="ball-img" src="img/ball.png" alt="">
             </div>
         </div>
         <footer>
-            <img src="img/mask-2.png" alt="">
+            <picture>
+                <source type="image/webp" srcset="img/mask-2.webp" alt="">
+                <img src="img/mask-2.png" alt="">
+            </picture>
             <div class="footer-content">
                 <a href="index.html"><svg class="logo"><use xlink:href="img/sprite.svg#logo"></use></svg></a>
                 <nav class="nav-footer">
@@ -148,7 +156,7 @@
                 </nav>
                 <a href="tel:8 123 45 67 89" class="footer-tel">8 123 45 67 89</a>
             </div>
-            <div class="footer-studio"><a href="https://bigly.studio/" target="_blank"><svg><use xlink:href="img/sprite.svg#studio"></use></svg></a>
+            <div class="footer-studio"><a target="_blank" href="https://bigly.studio/"><svg><use xlink:href="img/sprite.svg#studio"></use></svg></a>
             </div>
         </footer>
 
