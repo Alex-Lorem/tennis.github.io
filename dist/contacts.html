@@ -1,23 +1,55 @@
 <!doctype html>
-<html>
+<html lang="ru-RU">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="main.min.css">
-  <title>Контакты • Tennis Pro</title>
-  <link rel="stylesheet" type="text/css" href="main.min.css">
+  <link rel="shortcut icon" href="img/web-icon-180.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/web-icon-180.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/web-icon-57.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/web-icon-76.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/web-icon-120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/web-icon-152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/web-icon-167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/web-icon-180.png">
+  <meta name="description"
+        content="Школа Тенниса 🎾 Tennis Pro. Стань профессионалом большого тенниса. У нас лучшие тренеры в стране. Покупая абонемент вы также получите доступ в зал, бассейн, Видеоанализ тренировок и многое другое. Оставляй заявку.">
+  <meta property="og:title" content="Школа Тенниса • Tennis Pro">
+  <meta property="og:description"
+        content="Школа Тенниса 🎾 Tennis Pro. Стань профессионалом большого тенниса. У нас лучшие тренеры в стране. Покупая абонемент вы также получите доступ в зал, бассейн, Видеоанализ тренировок и многое другое. Оставляй заявку.">
+  <meta property="og:type" content="website">
+  <meta name="keywords"
+        content="Tennis Pro, Школа Тенниса, Уроки Тенниса в Москве, Уроки Тенниса онлайн, Занятия теннисом, Tennis School Moscow, Занятия теннисом онлайн, Тренер по теннису, Россия, Москва, Обучение теннису">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="https://bigly.studio/content/TennisSchool/pic-page-home.jpg">
+  <meta property="og:image:secure_url"
+        content="https://bigly.studio/content/TennisSchool/pic-page-home.jpg">
+  <meta property="og:image:width" content="1120">
+  <meta property="og:image:height" content="584">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Школа Тенниса • Tennis Pro">
+  <meta name="twitter:description"
+        content="Школа Тенниса 🎾 Tennis Pro. Стань профессионалом большого тенниса. У нас лучшие тренеры в стране. Покупая абонемент вы также получите доступ в зал, бассейн, Видеоанализ тренировок и многое другое. Оставляй заявку.">
+  <meta name="twitter:image:src" content="https://bigly.studio/content/TennisSchool/pic-page-home.jpg">
+  <meta name="twitter:image:width" content="1120">
+  <meta name="twitter:image:height" content="584">
+  <title>Школа Тенниса • Tennis Pro</title>
 </head>
 <body>
   <div class="wrapper">
-    <div class="contacts-background">
-      <div class="contacts-triangle"></div>
-      <div class="contacts-background-grey">
-        <img src="img/mask.png" alt="">
-      </div>
-    </div>
     <div class="contacts">
+      <div class="contacts-background">
+        <div class="contacts-triangle"></div>
+        <div class="contacts-background-grey">
+          <picture>
+            <source type="image/webp" srcset="img/masking.webp" alt="">
+            <img src="img/masking.png" alt="">
+          </picture>
+        </div>
+      </div>
       <header>
         <a href="index.html" class="logo-wrapper">
           <svg class="logo"><use xlink:href="img/sprite.svg#logo"></use></svg>
@@ -39,7 +71,7 @@
         <div class="contacts-information">
           <div class="contacts-address">123007, г. Москва, <br> 2-ой Хорошевский проезд, д. 7, к. 1</div>
           <div class="contacts-tel-mail">
-            <a class="contacts-tel" href="tel:+88001307806">8 800 130-78-06</a>
+            <a class="contacts-tel" href="tel: 8 800 130-78-06">8 800 130-78-06</a>
             <a href="mailto:">info@example.ru</a>
           </div>
           <div class="social-container">
@@ -63,7 +95,7 @@
           </div>
           <label for="" class="form-block textarea">
             <div class="error"></div>
-            <textarea rows="1" class="form-input" placeholder="Комментарий"></textarea>
+            <input type="text" class="form-input" placeholder="Комментарий">
           </label>
           <div class="form-submit">
             <button class="submit submit-contacts" id="send">Отправить</button>
@@ -74,12 +106,15 @@
           </div>
         </form>
       </div>
+        <div class="map">
+          <div id="mapbox"></div>
+        </div>
       </section>
     </div>
     <footer>
       <picture>
-        <source type="image/webp" srcset="img/mask-2.webp" alt="">
-        <img src="img/mask-2.png" alt="">
+        <source type="image/webp" srcset="img/masking-2.webp" alt="">
+        <img src="img/masking-2.png" alt="">
       </picture>
       <div class="footer-content">
         <a href="index.html"><svg class="logo"><use xlink:href="img/sprite.svg#logo"></use></svg></a>
@@ -95,5 +130,60 @@
       </div>
     </footer>
   </div>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+  <script>
+    // Mapbox - JS
+
+    mapboxgl.accessToken = 'pk.eyJ1IjoicHJvamVjdG9jIiwiYSI6ImNreGVsdHdjcTM2bTQyd281NHdta21uZ3UifQ._5kkoBi27CIhhbSiwCAFBg';
+    var map = new mapboxgl.Map({
+      container: 'mapbox',
+      style: 'mapbox://styles/projectoc/ckxem0oqhfp4o14pcp95yc7ds?optimize=true',
+      center: [37.482269746328626, 55.76365927695815],
+      zoom: '11.2'
+    });
+
+    map.on('load', () => {
+// Load an image from an external URL.
+      map.loadImage(
+              'img/marker.png',
+              (error, image) => {
+                if (error) throw error;
+
+// Add the image to the map style.
+                map.addImage('cat', image);
+
+// Add a data source containing one point feature.
+                map.addSource('point', {
+                  'type': 'geojson',
+                  'data': {
+                    'type': 'FeatureCollection',
+                    'features': [
+                      {
+                        'type': 'Feature',
+                        'geometry': {
+                          'type': 'Point',
+                          'coordinates': [37.53092570854585, 55.771841253206674]
+                        }
+                      }
+                    ]
+                  }
+                });
+
+// Add a layer to use the image to represent the data.
+                map.addLayer({
+                  'id': 'points',
+                  'type': 'symbol',
+                  'source': 'point', // reference the data source
+                  'layout': {
+                    'icon-image': 'cat', // reference the image
+                    'icon-size': 0.25
+                  }
+                });
+              }
+      );
+    });
+  </script>
+  <script src="script.min.js"></script>
 </body>
 </html>
